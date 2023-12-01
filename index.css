@@ -1,0 +1,120 @@
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  background:0;
+  }
+body {
+  font-weight:70;
+  color:white;
+  background-color:SkyBlue;
+  }
+.title {
+  text-align:center;
+  padding:25px;
+  background-color:#333;
+  }
+ .box .box1 #head{
+   border-radius:50%;
+   width:100px;
+   }
+ .box .box1 {
+   display:flex;
+   align-item:center;
+   justify-content:center;
+   margin-top:25px;
+   }
+ .box .text {
+   text-align:center;
+   }
+ .url {
+   display:flex;
+   justify-content:space-around;
+
+   }
+ .url div {
+      background-color:#009eff;
+      padding:10px;
+   }
+ #about {
+   margin:25px auto;
+   width:350px;
+   border-radius:25px;
+   padding:25px;
+   background-color:#0700ff;
+   }
+ #about #Java {
+   background-color:#000b9a;
+   height:10px;
+   border-radius:25px;
+   }
+ #about #Java #c {
+   background-color:white;
+   height:10px;
+   width:35%;
+   border-radius:25px;
+   } 
+ #about #Python {
+   background-color:#000b9a;
+   height:10px;
+   border-radius:25px;
+   }
+ #about #Python #c {
+   background-color:white;
+   height:10px;
+   width:47%;
+   border-radius:25px;
+   }
+  #about #Android {
+   background-color:#000b9a;
+   height:10px;
+   border-radius:25px;
+   }
+ #about #Android #c {
+   background-color:white;
+   height:10px;
+   width:57%;
+   border-radius:25px;
+   }
+ #about #x {
+   margin-top:15px;
+   }
+ #ale {
+   width:500px;
+   height:90px;
+   border:1px solid black;
+   margin:50px auto;
+   }
+ #ale button {
+   margin-top:25px;
+   padding:10px;
+   margin-left:35px;
+   background-color:SkyBlue;
+   color:white;
+   }
+  #ale1 {
+   width:500px;
+   height:90px;
+   border:1px solid black;
+   margin:50px auto;
+   }
+ #ale1 button {
+   margin-top:25px;
+   padding:10px;
+   margin-left:35px;
+   background-color:SkyBlue;
+   color:white;
+   }
+        
+        h1 {
+            margin-top: 50px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }

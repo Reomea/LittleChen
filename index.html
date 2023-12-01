@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+ <meta name="viewport" meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Yabe</title>
+  </head>
+  <body>	
+	<div class="box">
+ <div class="box1">
+<img id="head" src="tx.jpg"/>
+</div>
+<div class="text">小陈同学</div>
+<div class="text">『Welcom to my blog』</div>
+ </div>
+ <div class="url">
+ <div onclick="go()">文档</div>
+ <div onclick="go1()">歌单</div>
+ <div onclick="go2()">友链</div>
+ </div>
+  <div style="text-align:center;" class="txt"></div>
+ <div id="about">
+ <p>#Java</p>
+ <div id="Java">
+ <div id="c"></div>
+ </div>
+  <p id="x">#Python</p>
+ <div id="Python">
+ <div id="c"></div>
+ </div>
+  <p id="x">#Android ＆ Windows</p>
+ <div id="Android">
+ <div id="c"></div>
+ </div>
+ 
+ </div>
+
+ <pre>
+ <code id="language-python">
+ 
+ print("I want to make firends with you")
+
+ </code>
+ </pre>
+ <script>
+ hljs.highlightAll();
+ url = ["document.html","songlist.html","link.html"];
+ 
+ function go(){
+ window.location.href=url[0];
+ }
+ function go1(){
+ window.location.href=url[1];
+ }
+ function go2(){
+ window.location.href=url[2];
+ }
+var x = new Date();
+var year = x.getFullYear();
+var month = x.getMonth() + 1;
+var date = x.getDate();
+var text = year + "-" + month + "-" + date;
+document.querySelector(".txt").innerText = "from 2023-11-24 to" + text;
+ </script>
+  </body>
+</html>
