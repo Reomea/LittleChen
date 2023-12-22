@@ -1,1 +1,1 @@
-
+print("WELCOM TO MY BLOG")
