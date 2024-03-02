@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML取色器</title>
+
+    <script src="js/color_change.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .picker {
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .picker_input {
+            height: 40px;
+            width: 200px;
+            display: inline-block;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="abc" style="display: none;">
+        <span>选择色码:</span>
+        <input type="" name="" id="picker_input" value="" readonly="readonly" class="picker_input">
+    </div>
+    <div class="picker" id="color-picker" style="display: none;">请选择颜色</div>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            // alert(1)
+
+
+            document.getElementsByClassName('picker')[0].click();
+        }
+
+
+        var obj = document.getElementById("picker");
+        var a = Colorpicker.create({
+            el: "color-picker",
+            color: "#000fff",
+            change: function (elem, hex) {
+                elem.style.backgroundColor = hex;
+                document.getElementById("picker_input").value = hex;
+             iapp.s('sss.ys',hex);
+		     iapp.fn('a.b("' + 'b' + '")');
+            }
+        })
+
+
+
+    </script>
+
+<template>
+	<view>
+		<t-color-picker></t-color-picker>
+	</view>
+</template>
+<script>
+	import tColorPicker from '@/components/t-color-picker/t-color-picker.vue'
+	export default {
+		components: {
+			tColorPicker
+		}
+	};
+</script>
+
+
+</body>
+
+</html>
